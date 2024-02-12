@@ -1,100 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" />
+  <title>Favela Connect - Criando Conexões!</title>
+</head>
 
-    <!-- ===== Boxicons CSS ===== -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"/>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#">
+        <img src="assets/img/logo-fundo-preto.svg" alt="Logo" class="logo">
+      </a>
+      <ul class="menu-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Vagas</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li class="join-btn"><a href="#">Acessar</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
 
-    <title>Favela Connect - Criando Conexões!</title>
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <div class="nav-bar">
-          <i class='bx bx-menu sidebarOpen'></i>
-          <img src="./assets/img/Logo Favela.jpg" alt="Logo do Favela Connect" class="logo"/>
-
-          <div class="menu">
-
-            <div class="logo-toggle">
-              <img src="./assets/img/Logo_Favela-removebg-preview.png" alt="Logo do Favela Connect" class="logo"/>
-              <i class='bx bx-x siderbarClose'></i>
-            </div>
-
-            <ul class="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">vagas</a></li>
-              <li><a href="#">Contratar</a></li>
-              <li><a href="#">Sobre Nós</a></li>
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Encontre o <span class="text-span">emprego</span> que você merece!</h1>
+          <form action="#" class="search-form">
+            <input type="text" placeholder="Pesquise por algum trabalho..." required>
+            <button class="material-symbols-outlined" type="sumbit">search</button>
+          </form>
+          <div class="popular-tags">
+            Popular:
+            <ul class="tags">
+              <li><a href="#">Webite Design</a></li>
+              <li><a href="#">Logo Design</a></li>
+              <li><a href="#">WordPress</a></li>
+              <li><a href="#">AI Design</a></li>
             </ul>
           </div>
 
-          <div class="darkLight-searchBox">
-            <div class="dark-light">
-              <i class="bx bx-moon moon"></i>
-              <i class="bx bx-sun sun"></i>
-            </div>
-
-            <div class="searchBox">
-              <div class="searchToggle">
-                <i class="bx bx-x cancel"></i>
-                <i class="bx bx-search search"></i>
-              </div>
-
-                <div class="search-field">
-                  <input type="text" placeholder="Search..." />
-                  <i class="bx bx-search"></i>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </nav>
-    </header>
-    
-    <!--holiday section design-->
+        <img src="./assets/img/team.svg" alt="" class="hero-image">
+      </div>
+    </section>
+
     <section class="quemSomos">
       <div class="quemSomos-img">
-          <img src="./assets/img/vecteezy_teamwork.jpg">
+        <img src="./assets/img/vecteezy_teamwork.jpg">
       </div>
-  
+
 
       <div class="quemSomos-text-container">
-        
+
         <div class="quemSomos-text">
-          
-          <h2>What is Lorem Ipsum?</h2> 
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-          
+
+          <h2>What is Lorem Ipsum?</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500.</p>
+
         </div>
 
         <div class="quemSomos-text">
-          
-          <h2>What is Lorem Ipsum?</h2> 
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-          
+
+          <h2>What is Lorem Ipsum?</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500.</p>
+
         </div>
 
         <div class="quemSomos-text">
-          
-          <h2>What is Lorem Ipsum?</h2> 
-          <p class="no-border">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-          
+
+          <h2>What is Lorem Ipsum?</h2>
+          <p class="no-border">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has
+            been the industry's standard dummy text ever since the 1500.</p>
+
         </div>
 
       </div>
-  
-  </section>
-    <main></main>
+    </section>
+  </main>
 
-    <footer></footer>
+  <footer></footer>
 
-    <script src="./js/main.js"></script>
-  </body>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,137 @@
+@media screen and (max-width: 1270px) {
+  .hero-section .popular-tags {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header .navbar {
+    height: 3.5rem;
+    padding: .5rem 2rem 0;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .menu-links {
+    height: 100vh;
+    max-width: 300px;
+    width: 100%;
+    background: var(--cor-branca);
+    position: fixed;
+    left: -300px;
+    top: 0;
+    display: block;
+    padding: 75px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar .menu-links li {
+    margin-bottom: 30px;
+  }
+
+  .navbar .menu-links li a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+  .navbar .menu-links .join-btn a {
+    padding: 0;
+  }
+
+  .navbar .menu-links .join-btn a:hover {
+    color: var(--azul-principal);
+    background: none;
+  }
+
+  .navbar :is(#close-menu-btn, #hamburger-btn) {
+    display: block;
+    font-size: 2.5rem
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1;
+    width: 27rem;
+  }
+
+  .hero-section .search-form {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 45px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-section .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 40px;
+    max-width: 500px;
+  }
+
+  .hero-image {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-section .hero-content h1 {
+    font-size: 2rem;
+    line-height: 38px;
+    max-width: 500px;
+  }
+
+  .hero-image {
+    width: 20rem;
+  }
+}
+
+/* KEYFRAMES */
+
+@keyframes myAnim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
