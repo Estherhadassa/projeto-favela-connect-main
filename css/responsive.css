@@ -86,6 +86,26 @@
     align-items: center;
     margin-top: 20px;
   }
+
+  .quemSomos {
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  .quemSomos-text-container {
+    width: 80%;
+    text-align: center;
+  }
+
+  .quemSomos-text hr {
+    max-width: 400px;
+    margin: 1.3rem auto;
+  }
+
+  .quemSomos-img img {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -96,7 +116,18 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .quemSomos-img img {
+    width: 25rem;
+  }
+
+  .quemSomos-text-container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 425px) {
+
   .hero-section .hero-content h1 {
     font-size: 2.2rem;
     line-height: 40px;
@@ -105,6 +136,10 @@
 
   .hero-image {
     width: 25rem;
+  }
+
+  .quemSomos-img img {
+    width: 20rem;
   }
 }
 
@@ -117,6 +152,14 @@
 
   .hero-image {
     width: 20rem;
+  }
+
+  .quemSomos-img img {
+    width: 17rem;
+  }
+
+  .quemSomos-text-container {
+    width: 100%;
   }
 }
 

@@ -19,20 +19,18 @@
   --cor-rosa: #F2E3D5;
   --cor-branca: #fffafa;
   --cor-preta: #161716;
+  --cor-background: #1b1b1b;
 }
 
 body {
-  background-color: #1B1B1D;
-  height: 100vh;
-}
-
-body.dark {
-  background-color: var(--cor-preta);
+  background-color: var(--cor-background);
 }
 
 span.text-span {
   color: var(--azul-principal);
 }
+
+/* HEADER */
 
 header {
   position: fixed;
@@ -62,20 +60,21 @@ header .navbar {
   width: 200px;
 }
 
-.logo-scroll{
+.logo-scroll {
   width: 130px;
   object-fit: contain;
   transition: 0.5s ease-in-out;
 }
+
 .navbar .menu-links {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .navbar .menu-links li a {
-  color: #fff;
+  color: var(--cor-branca);
   font-weight: 500;
   text-decoration: none;
   transition: 0.2s ease;
@@ -83,7 +82,7 @@ header .navbar {
 
 .navbar .menu-links .language-item a {
   display: flex;
-  gap: 8px;
+  gap: .5rem;
   align-items: center;
 }
 
@@ -96,13 +95,13 @@ header .navbar {
 }
 
 .navbar .menu-links .join-btn a {
-  border: 1px solid #fff;
-  padding: 8px 15px;
+  border: 1px solid var(--cor-branca);
+  padding: .5rem 1rem;
   border-radius: 4px;
 }
 
 .navbar .menu-links .join-btn a:hover {
-  color: #fff;
+  color: var(--cor-branca);
   border-color: transparent;
   background: var(--azul-principal);
 }
@@ -111,7 +110,7 @@ header .navbar {
 
 .hero-section {
   display: flex;
-  margin: 3rem 0;
+  margin: 3rem 0 0;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
@@ -130,7 +129,7 @@ header .navbar {
 }
 
 .hero-section .hero-content h1 {
-  color: #fff;
+  color: var(--cor-branca);
   font-size: 3rem;
   max-width: 630px;
   line-height: 65px;
@@ -165,7 +164,7 @@ header .navbar {
   outline: none;
   cursor: pointer;
   background: var(--azul-medio);
-  color: #fff;
+  color: var(--cor-branca);
   border-radius: 0 4px 4px 0;
   transition: background 0.2s ease;
 }
@@ -176,7 +175,7 @@ header .navbar {
 
 .hero-section .popular-tags {
   display: flex;
-  color: #fff;
+  color: var(--cor-branca);
   gap: 25px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -192,20 +191,20 @@ header .navbar {
 
 .hero-section .tags li a {
   text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--cor-branca);
+  border: 1px solid var(--cor-branca);
   padding: 4px 12px;
   border-radius: 50px;
   transition: 0.2s ease;
 }
 
 .hero-section .tags li a:hover {
-  color: #000;
-  background: #fff;
+  color: var(--cor-preta);
+  background: var(--cor-branca);
 }
 
 .navbar #hamburger-btn {
-  color: #fff;
+  color: var(--cor-branca);
   cursor: pointer;
   display: none;
   font-size: 1.7rem;
@@ -214,7 +213,7 @@ header .navbar {
 .navbar #close-menu-btn {
   position: absolute;
   display: none;
-  color: #000;
+  color: var(--cor-preta);
   top: 20px;
   right: 20px;
   cursor: pointer;
@@ -224,49 +223,157 @@ header .navbar {
 /* QUEM SOMOS */
 
 .quemSomos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10rem;
-  padding-top: 30px;
+  color: var(--cor-branca);
+  gap: 5rem;
 }
 
 .quemSomos-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin: 25px 50px 75px 100px;
-  padding-top: 30px;
+  width: 35rem;
 }
 
 .quemSomos-text-container {
-  display: column;
-  padding: 9;
-  margin-right: 200px;
-  margin-left: -5px;
-  top: 30px;
+  width: 30%;
+}
+
+.quemSomos-text hr {
+  height: 1px;
+  color: #e5e5e5;
+  margin: 1rem 0;
 }
 
 .quemSomos-text h2 {
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: 3px;
-  text-align: justify;
-  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 .quemSomos-text p {
-  font-size: 10px;
-  font-weight: 50;
-  line-height: 30px;
-  color: #ffffffab;
-  margin-bottom: 10px;
-  text-align: justify;
-  border-bottom: 1px solid #ccc;
+  font-size: .9rem;
+  font-weight: 300;
 }
 
+/* COMO FUNCIONA */
 
-.quemSomos-text p.no-border {
-  border-bottom: none;
+/* GABRIEL VAI FAZER TOMARA */
+
+/* EMPREGOS */
+
+#empregos {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#empregos .section-heading {
+  color: var(--cor-branca);
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.empregos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-container {
+  margin: 2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/card-tecnologia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  gap: .5rem;
+  width: 15rem;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.card-areas:nth-child(2) {
+  background-image: url(../assets/img/card-vendas.jpg);
+}
+
+.card-areas:nth-child(3) {
+  background-image: url(../assets/img/card-adm.jpg);
+}
+
+.card-areas:nth-child(4) {
+  background-image: url(../assets/img/card-saude.jpg);
+}
+
+.card-areas:nth-child(5) {
+  background-image: url(../assets/img/card-rh.jpg);
+}
+
+.card-areas:nth-child(6) {
+  background-image: url(../assets/img/card-cozinha.jpg);
+}
+
+.card-areas:nth-child(7) {
+  background-image: url(../assets/img/card-educacao.jpg);
+}
+
+.card-areas:nth-child(8) {
+  background-image: url(../assets/img/card-pcd.jpg);
+}
+
+.card-areas p {
+  color: var(--cor-branca);
+}
+
+.botao-areas {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.7rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  /* min-width: 11rem; */
+  background-color: transparent;
+  border: var(--azul-medio) 1px solid;
+  line-height: 1.5rem;
+  color: var(--cor-branca);
+}
+
+.botao-areas::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--azul-medio);
+  transition: all .35s;
+  border-radius: .5rem;
+}
+
+.botao-areas:hover {
+  color: var(--cor-branca);
+}
+
+.botao-areas span{
+  position: relative;
+  z-index: 2;
+}
+
+.botao-areas:hover:after {
+  width: 100%;
 }
