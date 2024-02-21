@@ -379,3 +379,88 @@ header .navbar {
 }
 
 /* teste*/
+
+/* Footer */
+
+.footer{
+  background-color: #202020;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoMais1code-footer{
+  width: 180px;
+}
+
+.logoFavela-footer{
+  width: 200px;
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h3{
+  font-size: 20px;
+  font-weight: 600;
+  color:var(--main-color);
+  margin-bottom: 15px;
+}
+
+.footer-box a{
+  color: #979797;
+  margin-bottom: 0.8rem;
+  transition: all .50s ease;
+}
+
+.footer-box a:hover{
+  transform: translateX(-5px);
+  color: var(--text-color);
+}
+
+.footer-box-social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.footer-box-social h3{
+  font-size: 20px;
+  font-weight: 600;
+  color:var(--main-color);
+  margin-bottom: 15px;
+}
+
+.Social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box-social box-icon{
+  color: #979797;
+  margin-bottom: 0.8rem;
+  transition: all .50s ease;
+}
+
+.footer-box-social box-icon:hover{
+  transform: translateX(-5px);
+}
+
+.footer-box-social h3{
+  margin-left: 50px
+}
+
