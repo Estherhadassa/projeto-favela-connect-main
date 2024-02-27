@@ -21,8 +21,8 @@
       </a>
       <ul class="menu-links">
         <li><a href="#">Início</a></li>
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="#">Vagas</a></li>
+        <li><a href="#quemSomos">Quem Somos</a></li>
+        <li><a href="#empregos">Vagas</a></li>
         <li><a href="#">Empresas</a></li>
         <li class="join-btn"><a href="#">Acessar</a></li>
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -54,27 +54,25 @@
       </div>
     </section>
 
-    <section class="quemSomos">
+    <section id="quemSomos">
       <div class="quemSomos-img">
         <img src="./assets/img/about-us.svg">
       </div>
       <div class="quemSomos-text-container">
         <div class="quemSomos-text">
           <h2>Quem somos nós?</h2>
-          <p>Na Favela Connect, acreditamos na força da comunidade. Nascemos para conectar pessoas em situação de vulnerabilidade social a oportunidades de emprego, promovendo crescimento e transformação.</p>
+          <p>Na Favela Connect, acreditamos na força da comunidade. Nascemos para conectar pessoas em situação de
+            vulnerabilidade social a oportunidades de emprego, promovendo crescimento e transformação.</p>
           <hr>
         </div>
         <div class="quemSomos-text">
           <h2>Como podemos te ajudar?</h2>
-          <p>Estamos aqui para ser a ponte que une talentos às oportunidades. Se você busca empoderamento através do trabalho, junte-se a nós no caminho para um futuro mais inclusivo e promissor</p>
+          <p>Estamos aqui para ser a ponte que une talentos às oportunidades. Se você busca empoderamento através do
+            trabalho, junte-se a nós no caminho para um futuro mais inclusivo e promissor</p>
         </div>
       </div>
     </section>
-
-    <section id="como-funciona">
-      <!-- GABRIEL VAI FAZER -->
-    </section>
-
+    
     <section id="empregos">
       <div class="empregos-container">
         <h2 class="section-heading">Ache um emprego na sua área</h2>
@@ -116,36 +114,79 @@
         <a href="#" class="botao-areas" role="button">
           <span>Ver todas as vagas</span></a>
       </div>
+    </section>
 
+    <section id="depoimentos">
+      <h2 class="section-heading">Depoimentos</h2>
+
+      <swiper-container class="mySwiper" navigation="true">
+        <swiper-slide>
+          <img src="./assets/img/foto-fabio.jpg" alt="">
+
+          <div class="bio-depoimento">
+            <h3>Fábio Martins</h3>
+            <p>CEO na NexusEdge</p>
+          </div>
+
+          <p>O projeto <em>Favela Connect</em> me ajudou a encontrar o funcionário certo para minha empresa. Foi muito
+            satisfatório! É o início de uma parceria de sucesso.</p>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/foto-guilherme.jpg" alt="">
+
+          <div class="bio-depoimento">
+            <h3>Guilherme Antônio</h3>
+            <p>Social Media na TRW Propaganda</p>
+          </div>
+
+          <p>Eu gostaria de agradecer muito ao <em>Favela Connect</em> por me ajudar a encontrar um emprego home office,
+            onde posso ficar perto dos meus filhos. Foi uma virada de chave na minha vida!</p>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/img/foto-luciana.jpg" alt="">
+
+          <div class="bio-depoimento">
+            <h3>Luciana Santos</h3>
+            <p>Analista de Marketing na Agência Script</p>
+          </div>
+
+          <p>Eu estava desempregada a vários meses e já estava entrando em desespero. Porém o <em>Favela Connect</em> me
+            ajudou a conseguir o tão sonhado emprego e uma excelente empresa. Sou muito grata a eles!</p>
+        </swiper-slide>
+      </swiper-container>
     </section>
   </main>
 
   <footer class="footer">
-      <div class="footer-logos">
-        <img src="./assets/img/LogoMais1Code.png" class="logoMais1code-footer" alt="">
-        <img src="./assets/img/logo-fundo-preto.svg" class="logoFavela-footer" alt="">
+    <div class="footer-logos">
+      <img src="./assets/img/LogoMais1Code.png" class="logoMais1code-footer" alt="">
+      <img src="./assets/img/logo-fundo-preto.svg" class="logoFavela-footer" alt="">
+    </div>
+
+    <div class="footer-box">
+      <h3>Institucional</h3>
+      <a href="#">Quem Somos</a>
+      <a href="#">Vagas</a>
+      <a href="#">Empresas</a>
+      <a href="#">Acessar</a>
+    </div>
+
+    <div class="footer-box-social">
+      <h3>Social</h3>
+
+      <div class="social-icons">
+        <box-icon type='logo' name='meta' size="md" color="white"></box-icon>
+        <box-icon name='instagram' type='logo' size="md" color="white"></box-icon>
+        <box-icon name='whatsapp' type='logo' size="md" color="white"></box-icon>
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-box">
-          <h3>Institucional</h3>
-          <a href="#">Sobre Nós</a>
-          <a href="#">Encontre uma vaga</a>
-          <a href="#">Para empresas</a>
-          <a href="#">FAQ</a>
-      </div>
+  <div class="footer-end">
+    &copy; Favela Connect. Todos os direitos reservados.
+  </div>
 
-      
-
-      <div class="footer-box-social">
-          <h3>Social</h3>
-          
-          <box-icon type='logo' name='meta' size="md" color="white"></box-icon>
-          <box-icon name='instagram' type='logo' size="md" color="white"></box-icon>
-          <box-icon name='whatsapp' type='logo' size="md" color="white" ></box-icon>
-            
-      </div>
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
