@@ -23,7 +23,7 @@
         <li><a href="#">Início</a></li>
         <li><a href="#quemSomos">Quem Somos</a></li>
         <li><a href="#empregos">Vagas</a></li>
-        <li><a href="#">Empresas</a></li>
+        <li><a href="#empresas">Empresas</a></li>
         <li class="join-btn"><a href="#">Acessar</a></li>
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
       </ul>
@@ -72,10 +72,10 @@
         </div>
       </div>
     </section>
-    
+
     <section id="empregos">
       <div class="empregos-container">
-        <h2 class="section-heading">Ache um emprego na sua área</h2>
+        <h2 class="section-heading">Ache um <span class="text-span">emprego</span> na sua área</h2>
 
         <div class="cards-container">
           <div class="card-areas">
@@ -113,6 +113,23 @@
         </div>
         <a href="#" class="botao-areas" role="button">
           <span>Ver todas as vagas</span></a>
+      </div>
+    </section>
+
+    <section id="empresas">
+      <h2 class="section-heading">Empresas que nos <span class="text-span">apoiam</span></h2>
+
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./assets/img/3m.svg" />
+          <img src="./assets/img/barstool-store.svg" />
+          <img src="./assets/img/budweiser.svg" />
+          <img src="./assets/img/buzzfeed.svg" />
+          <img src="./assets/img/forbes.svg" />
+          <img src="./assets/img/macys.svg" />
+          <img src="./assets/img/menshealth.svg" />
+          <img src="./assets/img/mrbeast.svg" />
+        </div>
       </div>
     </section>
 
@@ -165,9 +182,9 @@
 
     <div class="footer-box">
       <h3>Institucional</h3>
-      <a href="#">Quem Somos</a>
-      <a href="#">Vagas</a>
-      <a href="#">Empresas</a>
+      <a href="#quemSomos">Quem Somos</a>
+      <a href="#empregos">Vagas</a>
+      <a href="#empresas">Empresas</a>
       <a href="#">Acessar</a>
     </div>
 
@@ -175,9 +192,9 @@
       <h3>Social</h3>
 
       <div class="social-icons">
-        <box-icon type='logo' name='meta' size="md" color="white"></box-icon>
-        <box-icon name='instagram' type='logo' size="md" color="white"></box-icon>
-        <box-icon name='whatsapp' type='logo' size="md" color="white"></box-icon>
+        <a href="#"><box-icon type='logo' name='meta' size="md" color="white"></box-icon></a>
+        <a href="#"><box-icon name='instagram' type='logo' size="md" color="white"></box-icon></a>
+        <a href="#"><box-icon name='whatsapp' type='logo' size="md" color="white"></box-icon></a>
       </div>
     </div>
   </footer>
