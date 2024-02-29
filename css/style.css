@@ -22,6 +22,10 @@
   --cor-background: #1b1b1b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--cor-background);
 }
@@ -37,7 +41,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
 }
 
 header .navbar {
@@ -222,7 +226,7 @@ header .navbar {
 
 /* QUEM SOMOS */
 
-.quemSomos {
+#quemSomos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +240,7 @@ header .navbar {
 
 .quemSomos-text-container {
   width: 30%;
+  text-align: justify;
 }
 
 .quemSomos-text hr {
@@ -256,7 +261,7 @@ header .navbar {
 
 /* COMO FUNCIONA */
 
-/* GABRIEL VAI FAZER TOMARA */
+/* GABRIEL NÃO FEZ*/
 
 /* EMPREGOS */
 
@@ -304,6 +309,11 @@ header .navbar {
   width: 15rem;
   padding: 4rem;
   border-radius: 1rem;
+  transition: .3s ease-in-out;
+}
+
+.card-areas:hover {
+  transform: scale(1.050);
 }
 
 .card-areas:nth-child(2) {
@@ -369,7 +379,7 @@ header .navbar {
   color: var(--cor-branca);
 }
 
-.botao-areas span{
+.botao-areas span {
   position: relative;
   z-index: 2;
 }
@@ -378,16 +388,131 @@ header .navbar {
   width: 100%;
 }
 
-/* teste*/
+/* EMPRESAS */
+
+#empresas {
+  color: var(--cor-branca);
+  margin: 3rem 0;
+}
+
+#empresas .section-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.7rem;
+}
+
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  /* background: white; */
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--cor-background));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--cor-background));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+/* DEPOIMENTOS */
+
+#depoimentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 5rem;
+}
+
+#depoimentos .section-heading {
+  text-align: center;
+  color: var(--cor-branca);
+  font-size: 2rem;
+  margin-bottom: 2.7rem;
+}
+
+swiper-container {
+  width: 50%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+swiper-slide img {
+  display: block;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+swiper-slide p {
+  width: 80%;
+}
+
+.bio-depoimento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bio-depoimento p {
+  width: 100%;
+  font-size: .9rem;
+}
 
 /* Footer */
 
-.footer{
+.footer {
   background-color: #202020;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   justify-content: space-around;
   text-align: center;
 }
@@ -403,7 +528,7 @@ header .navbar {
   width: 180px;
 }
 
-.logoFavela-footer{
+.logoFavela-footer {
   width: 200px;
 }
 .footer-box{
@@ -411,56 +536,61 @@ header .navbar {
   flex-direction: column;
 }
 
-.footer-box h3{
+.footer-box h3 {
   font-size: 20px;
   font-weight: 600;
-  color:var(--main-color);
+  color: var(--cor-branca);
   margin-bottom: 15px;
 }
 
-.footer-box a{
+.footer-box a {
   color: #979797;
   margin-bottom: 0.8rem;
   transition: all .50s ease;
+  color: var(--cor-branca);
 }
 
-.footer-box a:hover{
+.footer-box a:hover {
   transform: translateX(-5px);
-  color: var(--text-color);
+  color: var(--azul-claro);
 }
 
-.footer-box-social{
+.footer-box-social {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-
-.footer-box-social h3{
+.footer-box-social h3 {
   font-size: 20px;
   font-weight: 600;
-  color:var(--main-color);
+  color: var(--cor-branca);
   margin-bottom: 15px;
 }
 
-.Social{
+.Social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-box-social box-icon{
+.footer-box-social box-icon {
   color: #979797;
   margin-bottom: 0.8rem;
   transition: all .50s ease;
 }
 
-.footer-box-social box-icon:hover{
-  transform: translateX(-5px);
+.social-icons {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-box-social h3{
-  margin-left: 50px
+.footer-box-social box-icon:hover {
+  transform: translateX(-5px);
+  color: var(--azul-claro);
+}
+
+.footer-box-social h3 {
+  margin-left: 10px
 }
 

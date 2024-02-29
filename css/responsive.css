@@ -64,6 +64,10 @@
     font-size: 2.5rem
   }
 
+  .quemSomos-text p {
+    text-align: justify;
+  }
+
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -81,13 +85,26 @@
     width: 27rem;
   }
 
+  .hero-section {
+    margin: 2rem 0 4rem;
+  }
+
+  .logo {
+    padding-top: 2rem;
+  }
+  
   .hero-section .search-form {
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    width: 80%;
   }
 
-  .quemSomos {
+  .hero-section .hero-content h1 {
+    margin-top: 2rem;
+  }
+ 
+  #quemSomos {
     flex-direction: column;
     padding: 0 2rem;
     gap: 2rem;
@@ -116,6 +133,36 @@
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 730px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 0 .5rem;
+  }
+
+  .logoMais1code-footer {
+    width: 130px;
+    margin-bottom: -2rem;
+  }
+
+  .logoFavela-footer {
+    width: 150px;
+  }
+
+  .footer-box h3,
+  .footer-box-social h3 {
+    font-size: 1rem;
+  }
+
+  .footer-box a {
+    font-size: .8rem;
+  }
+
+  .footer-box-social box-icon {
+    width: 28px;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .quemSomos-img img {
     width: 25rem;
@@ -123,6 +170,25 @@
 
   .quemSomos-text-container {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+
+  .logoFavela-footer {
+    margin-bottom: -2rem;
+  }
+
+  .footer-box-social {
+    margin-top: 1rem;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: .7rem;
   }
 }
 
