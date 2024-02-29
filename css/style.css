@@ -524,24 +524,14 @@ swiper-slide p {
   align-items: center;
 }
 
-
-.logoMais1code-footer {
+.logoMais1code-footer{
   width: 180px;
-  margin-bottom: -2rem;
-}
-.logoMais1code-footer:hover {
-transform: translateX(-10px);
 }
 
 .logoFavela-footer {
   width: 200px;
 }
-
-.logoFavela-footer:hover {
-  transform: translateX(-10px);
-  }
-
-.footer-box {
+.footer-box{
   display: flex;
   flex-direction: column;
 }
@@ -597,11 +587,6 @@ transform: translateX(-10px);
 
 .footer-box-social box-icon:hover {
   transform: translateX(-5px);
-  background-color: var(--azul-medio);
-  border-radius: 10px;
-}
-
-.icon-footer:hover {
   color: var(--azul-claro);
 }
 
@@ -609,11 +594,3 @@ transform: translateX(-10px);
   margin-left: 10px
 }
 
-.footer-end {
-  font-size: .9rem;
-  font-weight: 300;
-  padding: 1rem;
-  text-align: center;
-  background-color: #161716;
-  color: var(--cor-branca);
-}

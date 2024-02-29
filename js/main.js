@@ -31,3 +31,8 @@ window.onload = function () {
 let copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
+
+// LOGOS CARROUSEL
+
+let copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
