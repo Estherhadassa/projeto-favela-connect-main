@@ -587,7 +587,8 @@ swiper-slide p {
 
 .footer-box-social box-icon:hover {
   transform: translateX(-5px);
-  color: var(--azul-claro);
+  background-color: var(--azul-principal);
+  border-radius: 10px;
 }
 
 .footer-box-social h3 {
